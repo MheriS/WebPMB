@@ -1,0 +1,26 @@
+{
+    "sourceFile": "koneksi.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1729333062236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1729333126277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+<!DOCTYPE html>\r\n+<html>\r\n+    <head>\r\n+        <meta charset=\"UTF-8\">\r\n+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+        <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n+        <title>Koneksi Database MySQL</title>\r\n+    </head>\r\n+    \r\n+    <body>\r\n+        <?php\r\n+        $host = \"localhost\";\r\n+        $username = \"root\";\r\n+        $password = \"\";\r\n+        $database = \"camaba\";\r\n+\r\n+        // Mencoba untuk menghubungkan ke database\r\n+        $koneksi = mysqli_connect($host, $username, $password, $database);\r\n+\r\n+        // Memeriksa koneksi\r\n+        if ($koneksi) {\r\n+            echo \"Koneksi berhasil!\";\r\n+        } else {\r\n+            echo \"Koneksi gagal: \" . mysqli_connect_error();\r\n+        }\r\n+        ?>\r\n+    </body>\r\n+</html>\r\n"
+                },
+                {
+                    "date": 1729347007283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,40 +17,12 @@\n         // Mencoba untuk menghubungkan ke database\r\n         $koneksi = mysqli_connect($host, $username, $password, $database);\r\n \r\n         // Memeriksa koneksi\r\n-        if ($koneksi) {\r\n-            echo \"Koneksi berhasil!\";\r\n-        } else {\r\n-            echo \"Koneksi gagal: \" . mysqli_connect_error();\r\n-        }\r\n+        // if ($koneksi) {\r\n+        //     echo \"Koneksi berhasil!\";\r\n+        // } else {\r\n+        //     echo \"Koneksi gagal: \" . mysqli_connect_error();\r\n+        // }\r\n         ?>\r\n     </body>\r\n </html>\r\n-<!DOCTYPE html>\r\n-<html>\r\n-    <head>\r\n-        <meta charset=\"UTF-8\">\r\n-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-        <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n-        <title>Koneksi Database MySQL</title>\r\n-    </head>\r\n-    \r\n-    <body>\r\n-        <?php\r\n-        $host = \"localhost\";\r\n-        $username = \"root\";\r\n-        $password = \"\";\r\n-        $database = \"camaba\";\r\n-\r\n-        // Mencoba untuk menghubungkan ke database\r\n-        $koneksi = mysqli_connect($host, $username, $password, $database);\r\n-\r\n-        // Memeriksa koneksi\r\n-        if ($koneksi) {\r\n-            echo \"Koneksi berhasil!\";\r\n-        } else {\r\n-            echo \"Koneksi gagal: \" . mysqli_connect_error();\r\n-        }\r\n-        ?>\r\n-    </body>\r\n-</html>\r\n"
+                }
+            ],
+            "date": 1729333062235,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n    <head>\r\n        <meta charset=\"UTF-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n        <title>Koneksi Database MySQL</title>\r\n    </head>\r\n    \r\n    <body>\r\n        <?php\r\n        $host = \"localhost\";\r\n        $username = \"root\";\r\n        $password = \"\";\r\n        $database = \"camaba\";\r\n\r\n        // Mencoba untuk menghubungkan ke database\r\n        $koneksi = mysqli_connect($host, $username, $password, $database);\r\n\r\n        // Memeriksa koneksi\r\n        if ($koneksi) {\r\n            echo \"Koneksi berhasil!\";\r\n        } else {\r\n            echo \"Koneksi gagal: \" . mysqli_connect_error();\r\n        }\r\n        ?>\r\n    </body>\r\n</html>\r\n"
+        }
+    ]
+}

@@ -99,7 +99,7 @@
     <h3>SILAHKAN INPUT SOAL PILIHAN GANDA DI BAWAH INI!</h3>
             <?php
             $idsoal = $_GET['id'];
-            $cariid = $koneksi->query("select a.id, a.soal, a.jawaban, a.jawaban_A, a.jawaban_B, a.jawaban_C, a.jawaban_D, a.jawaban_E, b.nama_jurusan from soal a INNER JOIN jurusan b ON a.id_jurusan=b.id_jurusan where id = '$idsoal';") or die (mysql_error());
+            $cariid = $koneksi->query("select a.id, a.soal, a.jawaban, a.jawaban_A, a.jawaban_B, a.jawaban_C, a.jawaban_D, a.jawaban_E, b..nama_jurusan from soal a INNER JOIN jurusan b ON a.id_jurusan=b.id_jurusan where id = '$idsoal';") or die (mysql_error());
             $data = $cariid->fetch_array();
             $_SESSION['id'] = $data['id'];
             ?>

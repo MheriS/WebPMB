@@ -18,11 +18,11 @@
         $koneksi = mysqli_connect($host, $username, $password, $database);
 
         // Memeriksa koneksi
-        // if ($koneksi) {
-        //     echo "Koneksi berhasil!";
-        // } else {
-        //     echo "Koneksi gagal: " . mysqli_connect_error();
-        // }
+        if ($koneksi) {
+            echo "Koneksi berhasil!";
+        } else {
+            echo "Koneksi gagal: " . mysqli_connect_error();
+        }
         ?>
     </body>
 </html>
